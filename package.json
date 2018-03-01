@@ -1,0 +1,10 @@
+{
+  "name": "ChiaBot",
+  "version": "1.0.0",
+  "description": "A bot to filter out the letter N from Discord comments in light of China's censorship of that letter",
+  "main": "main.js",
+  "author": "Double Claw Hammer",
+  "dependencies": {
+    "discord.js": "^11.3.0",
+  }
+}
