@@ -51,7 +51,7 @@ client.on("message", async message => {
   }
 
   if (message.content.length != ret.length) {
-    message.channel.send('Did you mean "' + ret + '"? The letter :regional_indicator_n: is prohibited per orders of Supreme Leader Xi Jipig.');
+    message.channel.send('Did you try to type "' + ret + '"? The letter :regional_indicator_n: is prohibited per orders of Supreme Leader Xi Jipig.');
   }
 });
 
