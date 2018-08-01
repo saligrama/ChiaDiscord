@@ -62,16 +62,9 @@ client.on("message", async message => {
     return;
   }
 
-  var ret = '';
-  for (var i = 0; i < message.content.length; i++) {
-     var chr = message.content.substring(i, i+1);
-     if (chr.toUpperCase() != 'N') {
-        ret += chr;
-     }
-  }
-
-  if (message.content.length != ret.length) {
-    message.channel.send('Did you try to type "' + ret + '"? The letter :regional_indicator_n: is prohibited per orders of Supreme Leader Xi Jipig.');
+  // Check if lowercased version of the message contains "n"
+  if (message.content.toLowerCase().includes('n'))
+    message.channel.send('Did you try to type "' + message.content.replace(/n/gi,'') + '"? The letter :regional_indicator_n: is prohibited per orders of Supreme Leader Xi Jipig.');
   }
 });
 
